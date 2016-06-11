@@ -1,4 +1,14 @@
-# Instructions:
+# LEMP [PHP 7 - MySQL 5.7 - NginX] 
+
+####Installation####
+
+Assuming that you have installed Virtualbox and Vagrant; you have enabled virutalization in BIOS settings.
+
+Step 1: Fire up terminal and enter ````vagrant up````
+Step 2: Sit back and have a cup of coffee
+
+####Some addition info... ignore typos ####
+
 1. This vagrant's provisioning script includes install.sh and also folder "provision".
 Folder contains "provision" contains virtual host file "config/nginx_vhost" for nginx.
 
