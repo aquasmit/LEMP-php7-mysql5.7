@@ -26,8 +26,8 @@ Source: http://stackoverflow.com/a/27268933
 7. Note: When you use nginx for php 5.5 /5.6 and when you use nginx for php 7.0; there is just the small difference in virtual host file. Check file "provision > config/nginx_vhost", locate line ````fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;````. This line defined path for .sock file and for php 5 this path is  "/var/run/php5-fpm.sock;" and for php 7 this path is "/var/run/php/php7.0-fpm.sock". This is what I noticed while I was installing PHP 7.
 
 8. If you want, you find more php 7.0 extensions at below urls:
-	8.1: http://www.tutorialspoint.com/articles/how-to-install-php-7-on-ubuntu-linux-14-04-lts
-	8.2: http://tecadmin.net/install-php-7-on-ubuntu/#
+
+ * hi 8.2: http://tecadmin.net/install-php-7-on-ubuntu/#
 
 9. Automatted installation of MySQL through shell script was challenging. Below resources helped:
 	9.1 Video: https://www.youtube.com/watch?v=jMaocv9SVI0
