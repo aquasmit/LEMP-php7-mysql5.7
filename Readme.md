@@ -27,9 +27,11 @@ Source: http://stackoverflow.com/a/27268933
 
 8. If you want, you find more php 7.0 extensions at below urls:
 
- * hi 8.2: http://tecadmin.net/install-php-7-on-ubuntu/#
+ * 8.1 http://www.tutorialspoint.com/articles/how-to-install-php-7-on-ubuntu-linux-14-04-lts
+ * 8.2: http://tecadmin.net/install-php-7-on-ubuntu/#
 
 9. Automatted installation of MySQL through shell script was challenging. Below resources helped:
-	9.1 Video: https://www.youtube.com/watch?v=jMaocv9SVI0
-	9.2 http://imsavva.com/silent-installation-mysql-5-7-on-ubuntu/
-	9.3 Laracasts forum (this is unique. try it out.): https://laracasts.com/discuss/channels/laravel/laravel-compatibility-with-mysql-57?page=1 
+
+ * 9.1 Video: https://www.youtube.com/watch?v=jMaocv9SVI0
+ * 9.2 http://imsavva.com/silent-installation-mysql-5-7-on-ubuntu/
+ * 9.3 Laracasts forum (this is unique. try it out.): https://laracasts.com/discuss/channels/laravel/laravel-compatibility-with-mysql-57?page=1 
