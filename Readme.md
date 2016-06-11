@@ -1,4 +1,4 @@
-# LEMP [PHP 7 - MySQL 5.7 - NginX] 
+# LEMP [PHP 7 - MySQL 5.7 - NginX] Vagrant
 
 ####Installation####
 
