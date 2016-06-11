@@ -4,8 +4,8 @@
 
 Assuming that you have installed Virtualbox and Vagrant; you have enabled virutalization in BIOS settings.
 
-Step 1: Fire up terminal and enter ````vagrant up````
-Step 2: Sit back and have a cup of coffee
+ * Step 1: Fire up terminal and enter ````vagrant up````
+ * Step 2: Sit back and have a cup of coffee
 
 ####Some additional info... ignore typos ####
 
