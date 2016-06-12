@@ -1,4 +1,14 @@
-# Instructions:
+# LEMP [PHP 7 - MySQL 5.7 - NginX] Vagrant
+
+####Installation####
+
+Assuming that you have installed Virtualbox and Vagrant; you have enabled virutalization in BIOS settings.
+
+ * Step 1: Fire up terminal and enter ````vagrant up````
+ * Step 2: Sit back and have a cup of coffee
+
+####Some additional info... ignore typos ####
+
 1. This vagrant's provisioning script includes install.sh and also folder "provision".
 Folder contains "provision" contains virtual host file "config/nginx_vhost" for nginx.
 
@@ -16,10 +26,12 @@ Source: http://stackoverflow.com/a/27268933
 7. Note: When you use nginx for php 5.5 /5.6 and when you use nginx for php 7.0; there is just the small difference in virtual host file. Check file "provision > config/nginx_vhost", locate line ````fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;````. This line defined path for .sock file and for php 5 this path is  "/var/run/php5-fpm.sock;" and for php 7 this path is "/var/run/php/php7.0-fpm.sock". This is what I noticed while I was installing PHP 7.
 
 8. If you want, you find more php 7.0 extensions at below urls:
-	8.1: http://www.tutorialspoint.com/articles/how-to-install-php-7-on-ubuntu-linux-14-04-lts
-	8.2: http://tecadmin.net/install-php-7-on-ubuntu/#
+
+ * 8.1 http://www.tutorialspoint.com/articles/how-to-install-php-7-on-ubuntu-linux-14-04-lts
+ * 8.2: http://tecadmin.net/install-php-7-on-ubuntu/#
 
 9. Automatted installation of MySQL through shell script was challenging. Below resources helped:
-	9.1 Video: https://www.youtube.com/watch?v=jMaocv9SVI0
-	9.2 http://imsavva.com/silent-installation-mysql-5-7-on-ubuntu/
-	9.3 Laracasts forum (this is unique. try it out.): https://laracasts.com/discuss/channels/laravel/laravel-compatibility-with-mysql-57?page=1 
+
+ * 9.1 Video: https://www.youtube.com/watch?v=jMaocv9SVI0
+ * 9.2 http://imsavva.com/silent-installation-mysql-5-7-on-ubuntu/
+ * 9.3 Laracasts forum (this is unique. try it out.): https://laracasts.com/discuss/channels/laravel/laravel-compatibility-with-mysql-57?page=1 
