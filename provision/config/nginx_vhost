@@ -3,10 +3,15 @@ server {
     server_name app.dev;
 
     root /var/www/app.dev/;
-    index index.php index.html;
+    index.php index index.html;
 
     # Important for VirtualBox
     sendfile off;
+
+location ~* \.(ico|css|js|gif|jpe?g|png)(\?[0-9]+)?$ {
+    expires max;
+    log_not_found off;
+}
 
     location / {
         #try_files $uri $uri/ =404;

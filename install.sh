@@ -50,6 +50,13 @@ apt-get update
 apt-get --yes --force-yes install mysql-server-5.7
 
 
+# Allow remote connections to MySQL server
+sudo sed -i "s/[# ]*bind-address\([[:space:]]*\)=\([[:space:]]*\).*/bind-address = 0.0.0.0" /etc/mysql/my.cnf
+
+# Retart MySQL server to apply new configuration
+sudo service mysql restart
+
+
 # Nginx Configuration
 echo "Configuring Nginx"
 sudo cp /var/www/provision/config/nginx_vhost /etc/nginx/sites-available/nginx_vhost
