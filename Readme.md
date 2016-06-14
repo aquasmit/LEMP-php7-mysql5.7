@@ -17,7 +17,7 @@ Assuming that you have installed Virtualbox and Vagrant; you have enabled viruta
 SSH into vagrant box with ````$ vagrant ssh````
 
 
-####Some additional info... ignore typos ####
+####Some additional info... ####
 
 1. This vagrant's provisioning script includes install.sh and also folder "provision".
 Folder contains "provision" contains virtual host file "config/nginx_vhost" for nginx.
