@@ -6,6 +6,10 @@ Assuming that you have installed Virtualbox and Vagrant; you have enabled viruta
 
  * Step 1: Fire up terminal and enter ````vagrant up````
  * Step 2: Sit back and have a cup of coffee
+ * Step 3: Update your hosts file & add folloing line:
+  ````192.168.33.22   app.dev````
+  If you are using ubuntu / mac, you can run command ````sudo nano /etc/hosts```` to edit hosts file.
+  
 
 ####Some additional info... ignore typos ####
 
