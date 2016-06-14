@@ -16,6 +16,8 @@ Assuming that you have installed Virtualbox and Vagrant; you have enabled viruta
 
 SSH into vagrant box with ````$ vagrant ssh````
 
+MySQL root user password: 1234
+
 
 ####Some additional info... ####
 
