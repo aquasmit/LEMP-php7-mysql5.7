@@ -4,12 +4,18 @@
 
 Assuming that you have installed Virtualbox and Vagrant; you have enabled virutalization in BIOS settings.
 
- * Step 1: Fire up terminal and enter ````vagrant up````
+ * Step 1: Fire up terminal and enter ````$ vagrant up````
  * Step 2: Sit back and have a cup of coffee
  * Step 3: Update your hosts file & add folloing line:
+ 
   ````192.168.33.22   app.dev````
-  If you are using ubuntu / mac, you can run command ````sudo nano /etc/hosts```` to edit hosts file.
-  
+
+  If you are using ubuntu / mac, you can run command ````$ sudo nano /etc/hosts```` to edit hosts file.
+  * Fire up the browser and navigate to URL http://app.dev
+
+
+SSH into vagrant box with ````$ vagrant ssh````
+
 
 ####Some additional info... ignore typos ####
 
