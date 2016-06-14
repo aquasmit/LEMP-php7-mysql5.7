@@ -11,7 +11,7 @@ Assuming that you have installed Virtualbox and Vagrant; you have enabled viruta
   ````192.168.33.22   app.dev````
 
   If you are using ubuntu / mac, you can run command ````$ sudo nano /etc/hosts```` to edit hosts file.
-  * Fire up the browser and navigate to URL http://app.dev
+ * Fire up the browser and navigate to URL http://app.dev
 
 
 SSH into vagrant box with ````$ vagrant ssh````
