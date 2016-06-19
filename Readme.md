@@ -6,7 +6,7 @@ Assuming that you have installed Virtualbox and Vagrant; you have enabled viruta
 
  * Step 1: Fire up terminal and enter ````$ vagrant up````
  * Step 2: Sit back and have a cup of coffee
- * Step 3: Update your hosts file & add folloing line:
+ * Step 3: Update your (host machine) hosts file & add folloing line:
  
   ````192.168.33.22   app.dev````
 
@@ -16,7 +16,29 @@ Assuming that you have installed Virtualbox and Vagrant; you have enabled viruta
 
 SSH into vagrant box with ````$ vagrant ssh````
 
-MySQL root user password: 1234
+MySQL root user:
+username: root
+password: 1234
+
+MySQL Demo user:
+username: demo
+password: demo123
+
+Environment details:
+
+* BOX: Ubuntu 14.04 (trusty64 - you can update this in Vagrantfile)
+* IP: 192.168.33.21 (you can update this in Vagrantfile)
+* synced_folder: Folder that contains Vagrantfile (in host machine) is going to be synced with /var/www (in guest machine) - This can be updated in Vagrantfile
+* Git
+* Nginx
+* PHP 7.x
+* MySQL 5.7 with root password: 1234
+* Enables remote connection to MySQL
+* Creates new MySQL user. 
+ Username: demo 
+ Password: demo123
+* Sets up virtual host at URL http://app.dev. This is mapped to folder /var/www/app.dev in guest machine.
+* Installs Composer
 
 
 ####Some additional info... ####

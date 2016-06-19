@@ -3,7 +3,7 @@ server {
     server_name app.dev;
 
     root /var/www/app.dev/;
-    index.php index index.html;
+    index index.php index.html;
 
     # Important for VirtualBox
     sendfile off;

@@ -50,14 +50,30 @@ apt-get update
 apt-get --yes --force-yes install mysql-server-5.7
 
 
-# Allow remote connections to MySQL server
-sudo sed -i "s/[# ]*bind-address\([[:space:]]*\)=\([[:space:]]*\).*/bind-address = 0.0.0.0" /etc/mysql/my.cnf
+# Allow remote connections to MySQL server.
+#if you are using mysql 5.6 then bind-address will be editable in /etc/mysql/mysql.conf.d/mysqld.cnf file, otherwise bind-address will be editable in /etc/mysql/my.cnf
+sudo sed -i "s/bind-address.*/bind-address = 0.0.0.0/" /etc/mysql/my.cnf
+
 
 # Retart MySQL server to apply new configuration
 sudo service mysql restart
 
 
+#CREATE NEW MYSQL USER STARTS
+    MYSQL='mysql'
+
+    Q0="CREATE USER 'demo'@'%' IDENTIFIED BY 'demo123';"
+    Q1="GRANT ALL PRIVILEGES ON *.* TO 'demo'@'%' IDENTIFIED BY 'demo123' WITH GRANT OPTION;"
+    Q2="FLUSH PRIVILEGES;"
+    SQL="${Q0}${Q1}${Q2}"
+
+#$ROOT_PASSWORD HAS ALREADY BEEN DEFINED ABOVE
+
+    $MYSQL -uroot -p$ROOT_PASSWORD -e "$SQL"
+#CREATE NEW MYSQL USER ENDS
+
 # Nginx Configuration
+# If NginX does start, then you can always debug the issue by running "nginx" at terminal. This checks for any error in configuration of Nginx and prints out error if any. 
 echo "Configuring Nginx"
 sudo cp /var/www/provision/config/nginx_vhost /etc/nginx/sites-available/nginx_vhost
 sudo ln -s /etc/nginx/sites-available/nginx_vhost /etc/nginx/sites-enabled/
